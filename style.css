@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "gilroy";
+
+}
+#main{
+    height:100%;
+    width: 100%;
+    background-color: #f2f0ce;
+    background-image: url(./cf_grid-bg.png.svg) ;
+    background-size: contain;
+    position: absolute;
+    overflow: hidden;
+}
+
+#circle{
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 3vw;
+    height: 3vw;
+    background-color: orangered;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#main h1{
+    position: absolute;
+
+}
+#main #text{
+   position: absolute;
+   font-size: 130px;
+   top: 9%;
+   left: 49%;
+   z-index: 99;
+}
+
+#main #one{
+    top: 9%;
+    left: 3%;
+    font-size: 130px;
+}
+
+#main #two{
+    left: 3%;
+    font-size: 130px;
+    top: 28%;
+}
+
+#main #three{
+    left: 3%;
+    font-size: 130px;
+    top: 47% ;
+}
+span{
+    color: #2274a5;
+}
+
+#logo{
+    position: absolute;
+    height: 120px;
+    width: 110px;
+    top: 11%;
+    left: 64%;
+}
+#packman{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 58%;
+    left:73% ;
+
+}
+#side{
+    height: 160px;
+    position: absolute;
+    top: 38%;
+    right: 0%;
+
+
+}
+
+#pho{
+    height: 120px;
+    width: 180px;
+    position: absolute;
+    top: 30.5%;
+    left: 25.5%;
+    border-radius: 5px;
+}
+#w{
+    height: 120px;
+    width: 125px;
+    position: absolute;
+    top: 49.5%;
+    left: 33.5%;
+    border-radius: 5px;
+}
+#dog{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 17%;
+    left: 49%;
+    z-index: 9;
+}
+
+#over{
+    height: 70px;
+    width: 110%;
+    margin-left: -5%;
+    background-color:#2274a5 ;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    rotate: 8deg;
+
+
+
+}
+
+#over::-webkit-scrollbar{
+    display: none;
+}
+
+#strip{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid#fff;
+
+}
+
+#strip img{
+    height: 30px;
+}
+
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 30px));
+    }
+    
+}    
+
+#over1{
+    height: 70px;
+    width: 110%;
+    margin-left: -5%;
+    background-color:#2274a5 ;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    rotate: -8deg;
+
+}
+#over1::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(100);
+    }
+    100%{
+        transform: translateX(calc(-100% - 30px));
+    }
+    
+} 
+
+
+
+h6{
+    position: absolute;
+    font-size: 20px;
+    top: 6%;
+    right: 3%;
+    font-weight: 500;
+    
+}
+#nav{
+    height: 105px;
+    width: 450px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    gap: 8px;
+}
+.box{
+    padding: 30px 0px;
+    height: 85px;
+    width: 95px;
+    margin-top: 8px;
+    margin-left: 8px;
+    /* background-color: #f2f0ce; */
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+    text-align: center;
+    font-size: 18px;
+
+
+}
+
+#box4{
+    background-color: #f9e430;
+}
+#box1{
+    background-image: url(./logo-alexis-gardin.svg);
+    background-repeat: no-repeat;background-position: center;
+}
+
+#dot{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 6.5%;
+    right: 10%;
+    border-radius: 50%;
+    background-color: rgb(66, 221, 66);
+}
+
+  
+   
